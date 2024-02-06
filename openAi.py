@@ -1,3 +1,6 @@
+# pip install openai
+
+
 from openai import OpenAI
 
 OPENAI_API_KEY="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"
