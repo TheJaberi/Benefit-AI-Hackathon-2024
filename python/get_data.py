@@ -7,13 +7,13 @@ import datetime as dt
 current = dt.datetime.now()
 
 # Start date (one year ago from the current date)
-start = dt.datetime(current.year - 1, current.month, current.day)
+start = dt.datetime(current.year - 5, current.month, current.day)
 
 # End date (today, could be omitted as it's the default behavior to get data up to the current date)
 end = dt.datetime(current.year, current.month, current.day)
 
 # Define the ticker symbol
-tickerSymbol = 'AAPL'
+tickerSymbol = 'TSLA'
 
 # Get data on this ticker
 tickerData = yf.Ticker(tickerSymbol)

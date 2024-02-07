@@ -20,7 +20,7 @@ data = data[['Date', 'Close']]
 
 """above we selected the date and close column from the csv file"""
 
-data
+# data
 
 """we print the data above"""
 
@@ -29,7 +29,7 @@ data['Date'] = [date.split(' ')[0] for date in data['Date']]
 
 # Renaming the columns to 'ds' and 'y' for compatibility with Prophet
 data.columns = ['ds', 'y']
-data
+# data
 
 """rename the columns and display change"""
 
@@ -49,9 +49,9 @@ fig = plot_plotly(prophet, predictions)
 py_offline.plot(fig)
 
 
-import plotly.io as pio
-# Assuming 'fig' is your Plotly figure object
-pio.write_image(fig, 'figure.png')
+# import plotly.io as pio
+# # Assuming 'fig' is your Plotly figure object
+# pio.write_image(fig, 'figure.png')
 
 
 # Access the forecasted values
@@ -61,11 +61,11 @@ forecasted_values = predictions[['ds', 'yhat', 'yhat_lower', 'yhat_upper']]
 forecasted_values.to_csv('prophet_forecast.csv', index=False)
 
 # To access specific prediction for a specific date
-specific_date = '2024-02-01'
-specific_prediction = predictions[predictions['ds'] == specific_date]
+# specific_date = '2025-02-01'
+# specific_prediction = predictions[predictions['ds'] == specific_date]
 
 # Print or use the specific prediction
-print(specific_prediction[['ds', 'yhat', 'yhat_lower', 'yhat_upper']])
+# print(specific_prediction[['ds', 'yhat', 'yhat_lower', 'yhat_upper']])
 
 
 
