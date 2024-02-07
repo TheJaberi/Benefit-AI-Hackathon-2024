@@ -33,4 +33,10 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
 	}
+	// if r.Method == "POST" {
+	// 	r.ParseForm()
+	// 	str := r.FormValue("stock")
+	// 	// keyStr := r.FormValue("keyStr")
+	// 	//
+	// }
 }
