@@ -31,7 +31,7 @@ plt.gca().xaxis.set_major_locator(mdates.YearLocator())
 plt.gcf().autofmt_xdate()  # Improve formatting of the date labels
 
 # Save the plot to a file
-plt.savefig('data/forecast_plot.png', dpi=300)  # Save the plot as a PNG file
+plt.savefig('template/css/forecast_plot.png', dpi=300)  # Save the plot as a PNG file
 
 # Optionally, to display the plot if running the script interactively:
 # plt.show()
