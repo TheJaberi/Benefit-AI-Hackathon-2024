@@ -1,5 +1,8 @@
 body {
     min-width: 769px;
+    background-image: url('web.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bodycontainer {
@@ -9,7 +12,7 @@ body {
     flex-direction: column; */
     height: 100vh;
     width: 100%;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     color: rgb(0, 0, 0);
 
 }
@@ -162,7 +165,7 @@ body {
     align-items: center;
     flex-direction: column;
     /* outline: solid 1px red; */
-    height: 50%;
+    height: 55%;
     width: 100%;
 }
 
@@ -952,7 +955,7 @@ h1 {
     background-repeat: no-repeat;
     /* background-size: cover; */
     height: 40%; /* Specify the height of the div */
-    width: 80%; /* Specify the width of the div */
+    width: 70%; /* Specify the width of the div */
 
 }
 
