@@ -1,9 +1,26 @@
+body {
+    min-width: 769px;
+}
+
+.bodycontainer {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+
+}
+
 .up {
     display: flex;
     justify-content: space-around;
     /* align-items: center; */
     flex-direction: row;
-    outline: solid 1px red;
+    height: 45%;
+    /* outline: solid 1px red; */
 }
 
 .firstdivup {
@@ -11,7 +28,11 @@
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
-    outline: solid 1px black;
+    /* outline: solid 1px black; */
+    margin: 0 auto;
+    /* For grow & shrink as per screen size change values as per your requirements */
+    width: 60%;
+    height: 100%;
 }
 
 .userdiv {
@@ -19,6 +40,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    height: 25%;
+    /* width: 80%;
+    height: 50%; */
 }
 
 .userinfo {
@@ -29,6 +53,9 @@
     --text-color: rgb(255, 255, 255);
     --bg-color-sup: #5e5e5e;
     --bg-color: #2b2b2b;
+    width: 95%;
+    padding: 5px;
+    /* height: 50%; */
 }
 
 .img {
@@ -65,18 +92,23 @@
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
+    margin: 5px 5px;
+    width: 100%;
+    height: 50%;
 }
 
 .GoalsAi {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    margin: 5px 5px;
 }
 
 .GoalsModel {
     height: 33px;
     background-color: #000000;
-    width: 291px;
+    width: 95%;
+    height: 100%;
 }
 
 
@@ -85,14 +117,14 @@
 .line {
     background-color: #000000;
     height: 1px;
-    width: 90%;
+    width: 95%;
 }
 
 .title {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    margin: 12px 5px;
 }
 
 .secdivup {
@@ -100,9 +132,22 @@
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
-    outline: solid 1px black;
+    width: 30%;
+    height: 100%;
 }
 
+
+.wholedivright, .thepiechart {
+    width: 100%;
+    height: 100%;
+}
+
+.thepiechart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 /* end of secdivup */
 
@@ -111,8 +156,36 @@
     /* justify-content: center; */
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+    outline: solid 1px red;
+    height: 50%;
+    width: 100%;
+}
+
+.downcontain {
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+    align-items: center;
     flex-direction: row;
     outline: solid 1px red;
+    height: 100%;
+    width: 100%;
+}
+
+.firstdowndiv {
+    outline: solid 1px blue;
+    width: 40%;
+    display: flex;
+}
+
+.secdowndiv {
+    outline: solid 1px black;
+    width: 40%;
+}
+
+.thirddowndiv {
+    outline: solid 1px pink;
 }
 
 .chat-link {
@@ -676,8 +749,10 @@ h1 {
     border-radius: 68px;
     cursor: pointer;
     padding: 6px 10px 6px 6px;
-    width: 389px;
-    height: 55px;
+    /* width: 389px;
+    height: 55px; */
+    width: 100%;
+    height: 50%;
     border: 0;
     overflow: hidden;
     position: relative;
@@ -836,16 +911,28 @@ h1 {
     }
 }
 
+.piechartAi {
+    height: 80%;
+    width: 90%;
+}
+
 .piechartModel {
-    height: 202px;
-    width: 202px;
+    height: 80%;
+    width: 90%;
     background-color: black;
+    margin: 0 auto;
 }
 
 .linerModel {
-    height: 202px;
-    width: 202px;
-    background-color: black;
+    /* height: 202px;
+    width: 202px; */
+    /* background-color: black; */
+    background-image: url('AFS/data/forecast_plot.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%; /* Specify the height of the div */
+    width: 80%; /* Specify the width of the div */
+
 }
 
 .smt {
@@ -922,3 +1009,70 @@ footer {
     /* transform: translateY(-30px); */
     transition-duration: 0.3s;
 }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #fefefe;
+    /* width: 100%; */
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+  }
+
+  /* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
