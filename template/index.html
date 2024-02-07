@@ -280,15 +280,27 @@
 
         </div>
     </div>
+    <div class="fourthdowndiv">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <div id="CSVTable"></div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//jquerycsvtotable.googlecode.com/files/jquery.csvToTable.js"></script>
+        <script>
+            $(function() {
+                $('#CSVTable').CSVToTable('your_csv.csv');
+            });
+        </script>
+    </div>
     <!-- for dark mode -->
     <script>
-        // document.querySelector(".theme-switch__checkbox").addEventListener("change", function() {
-        //     document.body.classList.toggle("dark-mode");
+        // document.querySelector(" .theme-switch__checkbox ").addEventListener("change ", function() {
+        //     document.body.classList.toggle("dark-mode ");
         // });
         document.getElementById('myButton').addEventListener('click', function() {
             document.getElementById('container').style.display = 'block';
         });
     </script>
+
 </footer>
 
 </html>
