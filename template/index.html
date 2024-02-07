@@ -16,15 +16,30 @@
                 <div class="firstdivup">
                     <div class="userdiv">
                         <div class="userinfo">
-                            <div class="img">
-                                <!-- <img src="static/img/Adnan.jpg" alt=""> -->
+                            <!-- <div class="img">
+                                <img src="static/img/Adnan.jpg" alt="">
                                 <div class="avatar">
                                     <svg class="user-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,12.5c-3.04,0-5.5,1.73-5.5,3.5s2.46,3.5,5.5,3.5,5.5-1.73,5.5-3.5-2.46-3.5-5.5-3.5Zm0-.5c1.66,0,3-1.34,3-3s-1.34-3-3-3-3,1.34-3,3,1.34,3,3,3Z"></path></svg>
                                 </div>
                             </div>
                             <div class="nameuser">
                                 <h1>Adnan Jaberi</h1>
-                            </div>
+                            </div> -->
+                            <button id="btn-message" class="button-message">
+                                <div class="content-avatar">
+                                    <!-- <div class="status-user"></div> -->
+                                    <div class="avatar">
+                                        <svg class="user-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,12.5c-3.04,0-5.5,1.73-5.5,3.5s2.46,3.5,5.5,3.5,5.5-1.73,5.5-3.5-2.46-3.5-5.5-3.5Zm0-.5c1.66,0,3-1.34,3-3s-1.34-3-3-3-3,1.34-3,3,1.34,3,3,3Z"></path></svg>
+                                    </div>
+                                </div>
+                                <div class="notice-content">
+                                    <div class="username">Adnan Jaberi</div>
+                                    <div class="lable-message">sPYder AI
+                                        <!-- <span class="number-message">3</span> -->
+                                    </div>
+                                    <div class="user-id">@AdnanJaberi</div>
+                                </div>
+                            </button>
                         </div>
                         <div class="lines">
                             <!-- <div class="line"></div> -->
@@ -49,18 +64,25 @@
                     </div>
                 </div>
                 <div class="secdivup">
-                    <div class="title">
-                        <h1>Summary</h1>
-                        <!-- <div class="line"></div> -->
+                    <div class="firstdowndiv">
+                        <div class="thepiechart">
+                            <div class="piechartAi">
+                                <div class="piechartModel"></div>
+                                <div class="title smt">
+                                    <h1>Summary</h1>
+                                    <!-- <div class="line"></div> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="down">
                 <div class="firstdowndiv">
-                    <div class="thepiechart">
+                    <div class="thechart">
                         <div class="linerAi">
                             <div class="linerModel"></div>
-                            <div class="title">
+                            <div class="title smt">
                                 <h1>investments</h1>
                                 <!-- <div class="line"></div> -->
                             </div>
@@ -68,7 +90,7 @@
                     </div>
                 </div>
                 <div class="secdowndiv">
-                    <div class="thepiechart">
+                    <div class="thecarddiv">
                         <div class="card">
                             <div class="flip-card">
                                 <div class="flip-card-inner">
@@ -139,64 +161,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="title">
-                                <h1>investments</h1>
+                            <div class="title smt">
+                                <h1>Cards</h1>
                                 <!-- <div class="line"></div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="thirddowndiv">
-                    <div class="thechaticon">
-                        <div class="iconChat">
-                            <button class="chat-btn" id="myButton">
-                                <svg
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                viewBox="0 0 24 24"
-                                height="44"
-                                width="44"
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="w-8 hover:scale-125 duration-200 hover:stroke-blue-500"
-                                fill="none"
-                              >
-                                <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
-                                <path d="M8 9h8"></path>
-                                <path d="M8 13h6"></path>
-                                <path
-                                  d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"
-                                ></path>
-                              </svg>
-                                <span class="chat-text">Chat With Ai</span>
-                              </button>
-                            <div class="container" style="display: none;">
-                                <div class="nav-bar">
-                                    <a>Chat</a>
-                                    <div class="close">
-                                        <div class="line one"></div>
-                                        <div class="line two"></div>
-                                    </div>
-                                </div>
-                                <div class="messages-area">
-
-                                    <div class="message one"></div>
-                                    <div class="message two"></div>
-                                    <div class="message three"></div>
-                                    <div class="message four"></div>
-                                    <div class="message five"></div>
-                                    <div class="message six"></div>
-                                </div>
-                                <div class="sender-area">
-                                    <div class="input-place">
-                                        <input placeholder="Send a message." class="send-input" type="text">
-                                        <div class="send">
-                                            <svg class="send-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path fill="#6B6C7B" d="M481.508,210.336L68.414,38.926c-17.403-7.222-37.064-4.045-51.309,8.287C2.86,59.547-3.098,78.551,1.558,96.808 L38.327,241h180.026c8.284,0,15.001,6.716,15.001,15.001c0,8.284-6.716,15.001-15.001,15.001H38.327L1.558,415.193 c-4.656,18.258,1.301,37.262,15.547,49.595c14.274,12.357,33.937,15.495,51.31,8.287l413.094-171.409 C500.317,293.862,512,276.364,512,256.001C512,235.638,500.317,218.139,481.508,210.336z"></path></g></g></svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div></div>
                             </div>
                         </div>
                     </div>
@@ -208,8 +175,9 @@
 <footer>
     <div class="footer">
         <p>© 2021 All rights reserved. <a href="#" class="footerLink">Privacy</a> | <a href="#" class="footerLink">Terms</a></p>
+
     </div>
-    <div class="darkmodebts">
+    <!-- <div class="darkmodebts">
         <label class="theme-switch">
                 <input type="checkbox" class="theme-switch__checkbox">
                 <div class="theme-switch__container">
@@ -234,12 +202,89 @@
                     </div>
                 </div>
             </label>
+    </div> -->
+    <div class="thirddowndiv">
+        <div class="thechaticon">
+            <div class="iconChat">
+                <button class="chat-btn" id="myButton">
+                    <svg
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    height="35"
+                    width="35"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 hover:scale-125 duration-200 hover:stroke-blue-500"
+                    fill="none"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
+                    <path d="M8 9h8"></path>
+                    <path d="M8 13h6"></path>
+                    <path
+                      d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"
+                    ></path>
+                  </svg>
+                    <span class="chat-text">Chat With Ai</span>
+                  </button>
+                <div class="container" style="display: none;">
+                    <div class="nav-bar">
+                        <a>Chat</a>
+                        <div class="close">
+                            <div class="line one"></div>
+                            <div class="line two"></div>
+                        </div>
+                    </div>
+                    <div class="messages-area">
+
+                        <div class="message one"></div>
+                        <div class="message two"></div>
+                        <div class="message three"></div>
+                        <div class="message four"></div>
+                        <div class="message five"></div>
+                        <div class="message six"></div>
+                    </div>
+                    <div class="sender-area">
+                        <div class="input-place">
+                            <input placeholder="Send a message." class="send-input" type="text">
+                            <div class="send">
+                                <svg class="send-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path fill="#6B6C7B" d="M481.508,210.336L68.414,38.926c-17.403-7.222-37.064-4.045-51.309,8.287C2.86,59.547-3.098,78.551,1.558,96.808 L38.327,241h180.026c8.284,0,15.001,6.716,15.001,15.001c0,8.284-6.716,15.001-15.001,15.001H38.327L1.558,415.193 c-4.656,18.258,1.301,37.262,15.547,49.595c14.274,12.357,33.937,15.495,51.31,8.287l413.094-171.409 C500.317,293.862,512,276.364,512,256.001C512,235.638,500.317,218.139,481.508,210.336z"></path></g></g></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- <button class="button">
+                <svg
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    height="44"
+                    width="44"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 hover:scale-125 duration-200 hover:stroke-blue-500"
+                    fill="none"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
+                    <path d="M8 9h8"></path>
+                    <path d="M8 13h6"></path>
+                    <path
+                      d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"
+                    ></path>
+                  </svg>
+              </button> -->
+
+        </div>
     </div>
     <!-- for dark mode -->
     <script>
-        document.querySelector(".theme-switch__checkbox").addEventListener("change", function() {
-            document.body.classList.toggle("dark-mode");
-        });
+        // document.querySelector(".theme-switch__checkbox").addEventListener("change", function() {
+        //     document.body.classList.toggle("dark-mode");
+        // });
         document.getElementById('myButton').addEventListener('click', function() {
             document.getElementById('container').style.display = 'block';
         });
