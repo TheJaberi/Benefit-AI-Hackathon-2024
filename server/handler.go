@@ -10,7 +10,7 @@ type PageData struct {
 	ShowOutput bool
 	Output     string
 	Str        string
-	keyStr     string
+	// keyStr     string
 }
 
 // Handler handles the HTTP requests for the root path ("/").

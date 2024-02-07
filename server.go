@@ -9,6 +9,9 @@ import (
 )
 
 func main() {
+	// webart.OpenAI("Hello, I'm a chatbot.")
+	// with above code you can call the OpenAI function from the api.go file
+
 	// Set up HTTP request handlers for different paths
 	http.HandleFunc("/css/", webart.CSSHandler) // Handler for serving CSS files
 	http.HandleFunc("/", webart.Handler)        // Handler for the root path ("/")
