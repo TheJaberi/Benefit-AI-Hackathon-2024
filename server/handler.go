@@ -1,6 +1,7 @@
 package AFS
 
 import (
+	"fmt"
 	"html/template"
 	"log"
 	"net/http"
@@ -47,5 +48,6 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			log.Fatalf("Failed to execute command: %s\n", err, output)
 		}
+		fmt.Print("made stock call")
 	}
 }
