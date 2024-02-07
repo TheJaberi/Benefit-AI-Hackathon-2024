@@ -18,7 +18,7 @@ plt.plot(df['ds'], df['yhat'], label='Predicted', color='royalblue')
 plt.fill_between(df['ds'], df['yhat_lower'], df['yhat_upper'], color='grey', alpha=0.4, label='Confidence Interval')
 
 # Styling the plot
-plt.title('Forecast with Confidence Interval', fontsize=20, fontweight='bold', color='navy')
+plt.title('Stock predictions', fontsize=20, fontweight='bold', color='navy')
 plt.xlabel('Date', fontsize=15, fontweight='bold', color='darkred')
 plt.ylabel('Forecast Value', fontsize=15, fontweight='bold', color='darkred')
 plt.legend()
@@ -27,7 +27,7 @@ plt.tight_layout()
 
 # Format the date on the x-axis
 plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
-plt.gca().xaxis.set_major_locator(mdates.MonthLocator())
+plt.gca().xaxis.set_major_locator(mdates.YearLocator())
 plt.gcf().autofmt_xdate()  # Improve formatting of the date labels
 
 # Save the plot to a file
