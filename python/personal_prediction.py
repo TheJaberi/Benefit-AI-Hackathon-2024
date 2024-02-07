@@ -14,9 +14,9 @@ import datetime as dt
 import plotly.offline as py_offline
 import pandas as pd
 
-data = pd.read_csv("data/stock_data.csv")
+data = pd.read_csv("data/anz_data.csv")
 
-data = data[['Date', 'Close']]
+data = data[['date', 'balance']]
 
 """above we selected the date and close column from the csv file"""
 
@@ -25,7 +25,7 @@ data = data[['Date', 'Close']]
 """we print the data above"""
 
 # Iterate over the 'Date' column and extract just the date part from each string
-data['Date'] = [date.split(' ')[0] for date in data['Date']]
+# data['Date'] = [date.split(' ')[0] for date in data['Date']]
 
 # Renaming the columns to 'ds' and 'y' for compatibility with Prophet
 data.columns = ['ds', 'y']
@@ -38,7 +38,7 @@ prophet.fit(data)
 
 """made the model take the dataset and fit it"""
 
-future_dates = prophet.make_future_dataframe(periods=365)
+future_dates = prophet.make_future_dataframe(periods=30)
 predictions = prophet.predict(future_dates)
 
 """make the predictions with how many days to look ahead"""
@@ -49,16 +49,16 @@ fig = plot_plotly(prophet, predictions)
 # py_offline.plot(fig)
 
 
-# import plotly.io as pio
-# # Assuming 'fig' is your Plotly figure object
-# pio.write_image(fig, 'figure.png')
+import plotly.io as pio
+# Assuming 'fig' is your Plotly figure object
+pio.write_image(fig, 'figure.png')
 
 
 # Access the forecasted values
 forecasted_values = predictions[['ds', 'yhat', 'yhat_lower', 'yhat_upper']]
 
 # If you want to save these predictions to a CSV file
-forecasted_values.to_csv('data/prophet_forecast.csv', index=False)
+forecasted_values.to_csv('data/personal_prediction.csv', index=False)
 
 # To access specific prediction for a specific date
 # specific_date = '2025-02-01'
