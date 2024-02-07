@@ -14,7 +14,7 @@ import datetime as dt
 import plotly.offline as py_offline
 import pandas as pd
 
-data = pd.read_csv("AAPL.csv")
+data = pd.read_csv("data/stock_data.csv")
 
 data = data[['Date', 'Close']]
 
@@ -58,7 +58,7 @@ py_offline.plot(fig)
 forecasted_values = predictions[['ds', 'yhat', 'yhat_lower', 'yhat_upper']]
 
 # If you want to save these predictions to a CSV file
-forecasted_values.to_csv('prophet_forecast.csv', index=False)
+forecasted_values.to_csv('data/prophet_forecast.csv', index=False)
 
 # To access specific prediction for a specific date
 # specific_date = '2025-02-01'

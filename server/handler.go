@@ -2,7 +2,9 @@ package AFS
 
 import (
 	"html/template"
+	"log"
 	"net/http"
+	"os/exec"
 )
 
 // PageData represents the data used in the template for rendering the page.
@@ -33,10 +35,17 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
 	}
-	// if r.Method == "POST" {
-	// 	r.ParseForm()
-	// 	str := r.FormValue("stock")
-	// 	// keyStr := r.FormValue("keyStr")
-	// 	//
-	// }
+	if r.Method == "POST" {
+		// The stock ticker to pass to the Python script
+		ticker := "TSLA"
+
+		// Define the command to run the Python script with the ticker as an argument
+		cmd := exec.Command("python3", "python/get_data.py", ticker)
+
+		// Execute the command
+		output, err := cmd.CombinedOutput()
+		if err != nil {
+			log.Fatalf("Failed to execute command: %s\n", err, output)
+		}
+	}
 }
