@@ -38,8 +38,13 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	}
 	if r.Method == "POST" {
 		// The stock ticker to pass to the Python script
-		ticker := "TSLA"
-
+		temp := r.PostFormValue("Email")
+		var ticker string
+		if temp != "" {
+			ticker = temp
+		} else {
+			ticker = "TSLA"
+		}
 		// Define the command to run the Python script with the ticker as an argument
 		cmd := exec.Command("python3", "python/get_data.py", ticker)
 
@@ -47,6 +52,15 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		output, err := cmd.CombinedOutput()
 		if err != nil {
 			log.Fatalf("Failed to execute command: %s\n", err, output)
+		}
+		tmpl, err := template.ParseFiles("template/index.html")
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
+		err = tmpl.Execute(w, nil)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
 		fmt.Print("made stock call")
 	}
