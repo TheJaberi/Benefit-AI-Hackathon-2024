@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sPYder</title>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>sPYder</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet"> -->
+  </head>
 
-        <link rel="stylesheet" href="css/index.css">
-        <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet"> -->
-    </head>
-
-    <body>
-        <section class="MyBody">
-            <div class="bodycontainer">
-                <div class="up">
-                    <div class="firstdivup">
-                        <div class="userdiv">
-                            <div class="userinfo">
-                                <!-- <div class="img">
+  <body>
+    <section class="MyBody">
+      <div class="bodycontainer">
+        <div class="up">
+          <div class="firstdivup">
+            <div class="userdiv">
+              <div class="userinfo">
+                <!-- <div class="img">
                                 <img src="static/img/Adnan.jpg" alt="">
                                 <div class="avatar">
                                     <svg class="user-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,12.5c-3.04,0-5.5,1.73-5.5,3.5s2.46,3.5,5.5,3.5,5.5-1.73,5.5-3.5-2.46-3.5-5.5-3.5Zm0-.5c1.66,0,3-1.34,3-3s-1.34-3-3-3-3,1.34-3,3,1.34,3,3,3Z"></path></svg>
@@ -26,190 +25,213 @@
                             <div class="nameuser">
                                 <h1>Adnan Jaberi</h1>
                             </div> -->
-                                <button id="btn-message" class="button-message">
-                                    <div class="content-avatar">
-                                        <!-- <div class="status-user"></div> -->
-                                        <div class="avatar">
-                                            <svg class="user-img"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 24 24"><path
-                                                    d="M12,12.5c-3.04,0-5.5,1.73-5.5,3.5s2.46,3.5,5.5,3.5,5.5-1.73,5.5-3.5-2.46-3.5-5.5-3.5Zm0-.5c1.66,0,3-1.34,3-3s-1.34-3-3-3-3,1.34-3,3,1.34,3,3,3Z"></path></svg>
-                                        </div>
-                                    </div>
-                                    <div class="notice-content">
-                                        <div class="username">Adnan Jaberi</div>
-                                        <div class="lable-message">sPYder AI
-                                            <!-- <span class="number-message">3</span> -->
-                                        </div>
-                                        <div class="user-id">@AdnanJaberi</div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="lines">
-                                <!-- <div class="line"></div> -->
-                                <!-- <div class="line"></div> -->
-                            </div>
-                        </div>
-                        <div class="Goals">
-                            <div class="title">
-                                <h1>Goals</h1>
-                                <!-- <div class="line"></div> -->
-                            </div>
-                            <div class="GoalsAi">
-                                <div class="GoalsModel">
-                                    <progress id="file" value="32" max="100">
-                                        32% </progress>
-                                    <div class="title">
-                                        <h1>800BD</h1>
-                                        <!-- <div class="line"></div> -->
-                                    </div>
-                                </div>
-                                <div class="name"></div>
-                            </div>
-                        </div>
+                <button id="btn-message" class="button-message">
+                  <div class="content-avatar">
+                    <!-- <div class="status-user"></div> -->
+                    <div class="avatar">
+                      <svg
+                        class="user-img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12,12.5c-3.04,0-5.5,1.73-5.5,3.5s2.46,3.5,5.5,3.5,5.5-1.73,5.5-3.5-2.46-3.5-5.5-3.5Zm0-.5c1.66,0,3-1.34,3-3s-1.34-3-3-3-3,1.34-3,3,1.34,3,3,3Z"
+                        ></path>
+                      </svg>
                     </div>
-                    <div class="secdivup">
-                        <div class="wholedivright">
-                            <div class="thepiechart">
-                                <div class="piechartAi">
-                                    <div class="piechartModel"></div>
-                                    <div class="title smt">
-                                        <h1>Summary</h1>
-                                        <!-- <div class="line"></div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="notice-content">
+                    <div class="username">Adnan Jaberi</div>
+                    <div class="lable-message">
+                      sPYder AI
+                      <!-- <span class="number-message">3</span> -->
                     </div>
+                    <div class="user-id">@AdnanJaberi</div>
+                  </div>
+                </button>
+              </div>
+              <div class="lines">
+                <!-- <div class="line"></div> -->
+                <!-- <div class="line"></div> -->
+              </div>
+            </div>
+            <div class="Goals">
+              <div class="title">
+                <h1>Goals</h1>
+                <!-- <div class="line"></div> -->
+              </div>
+              <div class="GoalsAi">
+                <div class="GoalsModel">
+                  <progress id="file" value="32" max="100">32%</progress>
+                  <div class="title">
+                    <h1>800BD</h1>
+                    <!-- <div class="line"></div> -->
+                  </div>
                 </div>
-                <div class="down">
-                    <div class="downcontain">
-                        <div class="firstdowndiv">
-                            <div class="thechart">
-                                <div class="linerAi">
-                                    <div class="title">
-                                        <h1>Assets</h1>
-                                        <!-- <div class="line"></div> -->
-                                    </div>
-                                    <div class="asset">
-                                        <div class="linerModel">
-                                            <img src="css/forecast_plot.png"
-                                                alt="The Plot." class="imge">
-                                            <div class="title smt">
-                                                <h1>investments</h1>
-                                                <!-- <div class="line"></div> -->
-                                            </div>
-                                        </div>
-                                        <div class="input-group">
-                                            <!-- <label class="label">Email address</label> -->
-                                            <input autocomplete="off"
-                                                name="Email" id="Email"
-                                                class="input" type="email">
-                                            <button
-                                                class="ui-btn">SUBMIT</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="secdowndiv">
-                            <div class="thecarddiv">
-                                <div class="card">
-                                    <div class="custom-container">
-                                        <div class="custom-header">
-                                            <input
-                                                class="custom-input"
-                                                type="text"
-                                                name="cardName"
-                                                id="cardName"
-                                                placeholder="Full Name" />
-                                            <div class="custom-icon-container">
-                                                <svg
-                                                    class="custom-icon"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="30"
-                                                    height="30"
-                                                    viewBox="0 0 48 48">
-                                                    <path fill="#FF9800"
-                                                        d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"></path>
-                                                    <path fill="#D50000"
-                                                        d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"></path>
-                                                    <path fill="#FF3D00"
-                                                        d="M18 24c0 4.755 2.376 8.95 6 11.48c3.624-2.53 6-6.725 6-11.48s-2.376-8.95-6-11.48C20.376 15.05 18 19.245 18 24z"></path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="custom-content">
-                                            <input
-                                                class="custom-number-input"
-                                                type="text"
-                                                name="cardNumber"
-                                                id="cardNumber"
-                                                placeholder="0000 0000 0000 0000" />
-                                            <div
-                                                class="custom-date-cvv-container">
-                                                <input
-                                                    class="custom-date-input"
-                                                    type="text"
-                                                    name="expiryDate"
-                                                    id="expiryDate"
-                                                    placeholder="MM/AA" />
-                                                <input
-                                                    class="custom-cvv-input"
-                                                    type="text"
-                                                    name="cvv"
-                                                    id="cvv"
-                                                    placeholder="CVV" />
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="name"></div>
+              </div>
+            </div>
+          </div>
+          <div class="secdivup">
+            <div class="wholedivright">
+              <div class="thepiechart">
+                <div class="piechartAi">
+                  <div class="piechartModel">
+                    <img src="//upload.wikimedia.org/wikipedia/commons/8/87/Sample_Pie_Chart.png">
+                  </div>
+                  <div class="title smt">
+                    <h1>Summary</h1>
+                    <!-- <div class="line"></div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="down">
+          <div class="downcontain">
+            <div class="firstdowndiv">
+              <div class="thechart">
+                <div class="linerAi">
+                  <div class="title">
+                    <h1>Assets</h1>
+                    <!-- <div class="line"></div> -->
+                  </div>
+                  <div class="asset">
+                    <div class="linerModel">
+                      <img
+                        src="css/forecast_plot.png"
+                        alt="The Plot."
+                        class="imge"
+                      />
+                      <div class="title smt">
+                        <h1>investments</h1>
+                        <!-- <div class="line"></div> -->
+                      </div>
+                    </div>
+                    <form method="POST" action="/">
+                      <div class="input-group">
+                        <!-- <label class="label">Email address</label> -->
+                        <input
+                          autocomplete="off"
+                          name="Email"
+                          id="Email"
+                          class="input"/>
+                        <button class="ui-btn">SUBMIT</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="secdowndiv">
+              <div class="thecarddiv">
+                <div class="card">
+                  <div class="custom-container">
+                    <div class="custom-header">
+                      <input
+                        class="custom-input"
+                        type="text"
+                        name="cardName"
+                        id="cardName"
+                        placeholder="Full Name"
+                      />
+                      <div class="custom-icon-container">
+                        <svg
+                          class="custom-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 48 48"
+                        >
+                          <path
+                            fill="#FF9800"
+                            d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"
+                          ></path>
+                          <path
+                            fill="#D50000"
+                            d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"
+                          ></path>
+                          <path
+                            fill="#FF3D00"
+                            d="M18 24c0 4.755 2.376 8.95 6 11.48c3.624-2.53 6-6.725 6-11.48s-2.376-8.95-6-11.48C20.376 15.05 18 19.245 18 24z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="custom-content">
+                      <input
+                        class="custom-number-input"
+                        type="text"
+                        name="cardNumber"
+                        id="cardNumber"
+                        placeholder="0000 0000 0000 0000"
+                      />
+                      <div class="custom-date-cvv-container">
+                        <input
+                          class="custom-date-input"
+                          type="text"
+                          name="expiryDate"
+                          id="expiryDate"
+                          placeholder="MM/AA"
+                        />
+                        <input
+                          class="custom-cvv-input"
+                          type="text"
+                          name="cvv"
+                          id="cvv"
+                          placeholder="CVV"
+                        />
+                      </div>
+                    </div>
+                  </div>
 
-                                    <div class="title smt">
-                                        <h1>Cards</h1>
-                                        <!-- <div class="line"></div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="thirddowndiv">
-                            <div class="thechaticon">
-                                <div class="iconChat">
-                                    <button class="chat-btn" id="myBtn">
-                                        <svg
-                                            stroke-linejoin="round"
-                                            stroke-linecap="round"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            viewBox="0 0 24 24"
-                                            height="35"
-                                            width="35"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="w-8 hover:scale-125 duration-200 hover:stroke-blue-500"
-                                            fill="none">
-                                            <path fill="none" d="M0 0h24v24H0z"
-                                                stroke="none"></path>
-                                            <path d="M8 9h8"></path>
-                                            <path d="M8 13h6"></path>
-                                            <path
-                                                d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"></path>
-                                        </svg>
-                                        <span class="chat-text">Chat With
-                                            Ai</span>
-                                    </button>
+                  <div class="title smt">
+                    <h1>Cards</h1>
+                    <!-- <div class="line"></div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="thirddowndiv">
+              <div class="thechaticon">
+                <div class="iconChat">
+                  <button class="chat-btn" id="myBtn">
+                    <svg
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      height="35"
+                      width="35"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-8 hover:scale-125 duration-200 hover:stroke-blue-500"
+                      fill="none"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
+                      <path d="M8 9h8"></path>
+                      <path d="M8 13h6"></path>
+                      <path
+                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"
+                      ></path>
+                    </svg>
+                    <span class="chat-text">Chat With Ai</span>
+                  </button>
 
-                                    <div id="myModal" class="modal">
-                                        <div class="container modal-content">
-                                            <div class="nav-bar">
-                                                <a>Chat</a>
-                                                <div class="close">
-                                                    <div class="line one"></div>
-                                                    &times;
-                                                    <div class="line two"></div>
-                                                </div>
-                                            </div>
-                                            <div class="chat-container">
-                                                <div id="chatbox">
-                                                    <!-- <div class="messages-area">
+                  <div id="myModal" class="modal">
+                    <div class="container modal-content">
+                      <div class="nav-bar">
+                        <a>Chat</a>
+                        <div class="close">
+                          <div class="line one"></div>
+                          &times;
+                          <div class="line two"></div>
+                        </div>
+                      </div>
+                      <div class="chat-container">
+                        <div id="chatbox">
+                          <!-- <div class="messages-area">
                                                         <div
                                                             class="message one"></div>
                                                         <div
@@ -223,15 +245,17 @@
                                                         <div
                                                             class="message six"></div>
                                                     </div> -->
-                                                    <!-- Chat messages will be appended here -->
-                                                </div>
-                                                <div class="sender-area">
-                                                    <input id="inputField"
-                                                    type="text" class="input-place"
-                                                    placeholder="Type a message...">
-                                                <button
-                                                    id="sendButton" class="send">Send</button>
-                                                    <!-- <div
+                          <!-- Chat messages will be appended here -->
+                        </div>
+                        <div class="sender-area">
+                          <input
+                            id="inputField"
+                            type="text"
+                            class="input-place"
+                            placeholder="Type a message..."
+                          />
+                          <button id="sendButton" class="send">Send</button>
+                          <!-- <div
                                                         class="input-place">
                                                         <input
                                                             placeholder="Send a message."
@@ -253,71 +277,82 @@
                                                                             d="M481.508,210.336L68.414,38.926c-17.403-7.222-37.064-4.045-51.309,8.287C2.86,59.547-3.098,78.551,1.558,96.808 L38.327,241h180.026c8.284,0,15.001,6.716,15.001,15.001c0,8.284-6.716,15.001-15.001,15.001H38.327L1.558,415.193 c-4.656,18.258,1.301,37.262,15.547,49.595c14.274,12.357,33.937,15.495,51.31,8.287l413.094-171.409 C500.317,293.862,512,276.364,512,256.001C512,235.638,500.317,218.139,481.508,210.336z"></path></g></g></svg>
                                                         </div>
                                                     </div> -->
-                                                </div>
-                                            </div>
-                                            <script>
-                                                document.getElementById('sendButton').addEventListener('click', function() {
-                                                    var inputField = document.getElementById('inputField');
-                                                    var message = inputField.value;
-                                                    inputField.value = '';
-                                                  
-                                                    // Append the user's message to the chatbox
-                                                    document.getElementById('chatbox').innerHTML += `<p>User: ${message}</p>`;
-                                                  
-                                                    // Send the message to the GPT model and get the response
-                                                    fetch('https://api.openai.com/v1/engines/davinci-codex/completions', {
-                                                        method: 'POST',
-                                                        headers: {
-                                                            'Content-Type': 'application/json',
-                                                            'Authorization': 'Bearer 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'
-                                                        },
-                                                        body: JSON.stringify({
-                                                            prompt: message,
-                                                            max_tokens: 60
-                                                        })
-                                                    })
-                                                    .then(response => response.json())
-                                                    .then(data => {
-                                                        // The AI's response is in data.choices[0].text
-                                                        document.getElementById('chatbox').innerHTML += `<p>AI: ${data.choices[0].text.trim()}</p>`;
-                                                    })
-                                                    .catch(error => {
-                                                        console.error('Error:', error);
-                                                    });
-                                                  });
-                                              </script>
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <script>
-                                // Get the modal
-                                var modal = document.getElementById("myModal");
-                                
-                                // Get the button that opens the modal
-                                var btn = document.getElementById("myBtn");
-                                
-                                // Get the <span> element that closes the modal
-                                var span = document.getElementsByClassName("close")[0];
-                                
-                                // When the user clicks the button, open the modal 
-                                btn.onclick = function() {
-                                  modal.style.display = "block";
-                                }
-                                
-                                // When the user clicks on <span> (x), close the modal
-                                span.onclick = function() {
-                                  modal.style.display = "none";
-                                }
-                                
-                                // When the user clicks anywhere outside of the modal, close it
-                                window.onclick = function(event) {
-                                  if (event.target == modal) {
-                                    modal.style.display = "none";
-                                  }
-                                }
-                                </script>
-                                <!-- <button class="button">
+                        </div>
+                      </div>
+                      <script>
+                        document
+                          .getElementById("sendButton")
+                          .addEventListener("click", function () {
+                            var inputField =
+                              document.getElementById("inputField");
+                            var message = inputField.value;
+                            inputField.value = "";
+
+                            // Append the user's message to the chatbox
+                            document.getElementById(
+                              "chatbox"
+                            ).innerHTML += `<p>User: ${message}</p>`;
+
+                            // Send the message to the GPT model and get the response
+                            fetch(
+                              "https://api.openai.com/v1/engines/davinci-codex/completions",
+                              {
+                                method: "POST",
+                                headers: {
+                                  "Content-Type": "application/json",
+                                  Authorization:
+                                    "Bearer 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",
+                                },
+                                body: JSON.stringify({
+                                  prompt: message,
+                                  max_tokens: 60,
+                                }),
+                              }
+                            )
+                              .then((response) => response.json())
+                              .then((data) => {
+                                // The AI's response is in data.choices[0].text
+                                document.getElementById(
+                                  "chatbox"
+                                ).innerHTML += `<p>AI: ${data.choices[0].text.trim()}</p>`;
+                              })
+                              .catch((error) => {
+                                console.error("Error:", error);
+                              });
+                          });
+                      </script>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <script>
+                  // Get the modal
+                  var modal = document.getElementById("myModal");
+
+                  // Get the button that opens the modal
+                  var btn = document.getElementById("myBtn");
+
+                  // Get the <span> element that closes the modal
+                  var span = document.getElementsByClassName("close")[0];
+
+                  // When the user clicks the button, open the modal
+                  btn.onclick = function () {
+                    modal.style.display = "block";
+                  };
+
+                  // When the user clicks on <span> (x), close the modal
+                  span.onclick = function () {
+                    modal.style.display = "none";
+                  };
+
+                  // When the user clicks anywhere outside of the modal, close it
+                  window.onclick = function (event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  };
+                </script>
+                <!-- <button class="button">
                                 <svg
                                     stroke-linejoin="round"
                                     stroke-linecap="round"
@@ -338,10 +373,10 @@
                                     ></path>
                                   </svg>
                               </button> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="fourthdowndiv">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="fourthdowndiv">
                     <script src="https://d3js.org/d3.v5.min.js"></script>
                     <div id="CSVTable"></div>
                     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -352,16 +387,16 @@
                         });
                     </script>
                 </div> -->
-                </div>
-            </div>
-        </section>
-    </body>
-    <!-- <footer>
+        </div>
+      </div>
+    </section>
+  </body>
+  <!-- <footer>
     <div class="footer">
         <p>© 2021 All rights reserved. <a href="#" class="footerLink">Privacy</a> | <a href="#" class="footerLink">Terms</a></p>
 
     </div> -->
-    <!-- <div class="darkmodebts">
+  <!-- <div class="darkmodebts">
         <label class="theme-switch">
                 <input type="checkbox" class="theme-switch__checkbox">
                 <div class="theme-switch__container">
@@ -388,16 +423,15 @@
             </label>
     </div> -->
 
-    <!-- for dark mode -->
-    <script>
-        // document.querySelector(" .theme-switch__checkbox ").addEventListener("change ", function() {
-        //     document.body.classList.toggle("dark-mode ");
-        // });
-        document.getElementById('myButton').addEventListener('click', function() {
-            document.getElementById('container').style.display = 'block';
-        });
-    </script>
+  <!-- for dark mode -->
+  <script>
+    // document.querySelector(" .theme-switch__checkbox ").addEventListener("change ", function() {
+    //     document.body.classList.toggle("dark-mode ");
+    // });
+    document.getElementById("myButton").addEventListener("click", function () {
+      document.getElementById("container").style.display = "block";
+    });
+  </script>
 
-    <!-- </footer> -->
-
+  <!-- </footer> -->
 </html>
